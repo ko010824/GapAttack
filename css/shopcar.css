@@ -1,0 +1,80 @@
+.section{
+	width: 1170px;
+	margin: 30px auto;
+}
+.sec_tit{
+	text-align: left;
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.sec_content{
+	width: 100%;
+	overflow: hidden;
+}
+.sc_left{
+	float: left;
+	width: 65%;
+	height: 260px;
+	background: #eaeaea;
+	margin-right: 20px;
+}
+.sc_left P{
+	line-height: 40px;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+}
+.sc_left .goIndexBuy{
+	padding: 4px 5px;
+	color: #fff;
+	background: #000741;
+}
+.sc_right{
+	float: right;
+	width: 33%;
+	/*height: 150px;*/
+	background: #eaeaea;
+	position: relative;
+}
+.sc_right_fixed{
+	position: fixed;
+	right: 30px;
+	top: 88px;
+}
+.scr_top{
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	margin: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+}
+.scr_top p:first-child{
+	float: left;
+}
+.scr_top p:last-child{
+	float: right;
+}
+.commitButt{
+	width: 366px;
+	height: 40px;
+	margin: 10px;
+	text-align: center;
+	line-height: 40px;
+	color: #666;
+	background: #a9a9a9;
+	font-weight: 700;
+	outline: 0;
+	border: 0;
+}
+.tips_p{
+	width:100%;
+	text-align: right;
+	font-size: 14px;
+	color: #000;
+	position: absolute;
+	right: 5px;
+	bottom: -30px;
+}

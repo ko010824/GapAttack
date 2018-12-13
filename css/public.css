@@ -1,0 +1,498 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	height: 100%;
+}
+body {
+	font-family: "微软雅黑", Arial;
+}
+a{
+	cursor: pointer;
+	color: #369;
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+img{
+	border: none;
+}
+
+/*header*/
+header {
+	width: 100%;
+	height: 52px;
+	background: #f4f4f4;
+	border: 1px solid #e7e7e7;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+.head_left {
+	float: left;
+	margin-left: 90px;
+	padding-left: 25px;
+}
+.head_left a:first-child {
+	float: left;
+	padding: 13px 10px;
+	background: white;
+}
+.head_left a:last-child {
+	float: left;
+	width: 70px;
+	height: 12px;
+	padding: 15px 5px;
+	position: relative;
+}
+.head_left a:last-child img {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: -6px;
+}
+.head_left a:last-child:hover {
+	background: white;
+}
+.head_mid {
+	float: left;
+	margin-left: 300px;
+	font-size: 13px;
+	color: #666666;
+	line-height: 50px;
+}
+.head_mid a {
+	color: #666666;
+	text-decoration: underline;
+}
+.head_right {
+	float: left;
+	margin-left: 170px;
+	cursor: pointer;
+}
+.hr_login {
+	width: 95px;
+	height: 40px;
+	padding: 5px 0 5px 32px;
+	float: left;
+	text-align: left;
+	font-size: 13px;
+	color: #666666;
+	position: relative;
+}
+.hr_hide{
+	background: #fff;
+}
+.hr_login:hover {
+	color: black;
+}
+.hr_login:hover span {
+	border-top: 5px solid black;
+}
+.hr_login .signAndLogin {
+	line-height: 20px;
+}
+.hr_login span {
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top: 5px solid #777777;
+	position: absolute;
+	left: 95px;
+	top: 30px;
+}
+.hidelogin{
+	width: 95px;
+	position: absolute;
+	left: 0;
+	top: 51px;
+	z-index: 3;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px 0 #ccc;
+	border-radius: 2px;
+	padding: 10px 15px;
+	background: #fff;
+	display: none;
+}
+.hidelogin p a{
+	color: #000;
+}
+.hidelogin .signAndLoginButton{
+	display: block;
+	text-align: center;
+	padding: 5px 0;
+	font-size: 13px;
+	color: white;
+	background: #132344;
+}
+.hidelogin p{
+	font-size: 13px;
+	text-align: center;
+	line-height: 32px;
+}
+.hr_shopcar {
+	float: left;
+	margin-top: 5px;
+	margin-left: 150px;
+}
+
+/*saleAd*/
+.saleFixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 45px;
+	background: #132344;
+}
+.saleAd{
+	height: 45px;
+	position: relative;
+	background: #132344;
+}
+.sSwitchImg{
+	background: #132344;
+}
+#open,#close{
+	cursor: pointer;
+	margin: 0 auto;
+}
+.sale {
+	display: none;
+	height: 400px;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	z-index: 15;
+}
+.sale .img_1 {
+	height: 100%;
+	width: 50%;
+}
+.sale .a1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sale .a2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*logoAndSearch*/
+.logoAndSearch {
+	width: 100%;
+	height: 75px;
+	position: relative;
+	padding: 25px 0 40px;
+	text-align: center;
+}
+.search{
+	position: absolute;
+	right: 150px;
+	top: 50px;
+}
+.search .inp{
+	width: 182px;
+	height: 32px;
+	border: 1px solid #ccc;
+	text-indent: 12px;
+	font-size: 12px;
+	color: #999999;
+}
+.search button {
+	width: 30px;
+	height: 30px;
+	border: none;
+	outline: none;
+	background: url(../img/search.gif)no-repeat center;
+	position: absolute;
+	left: 150px;
+	top: 2px;
+}
+
+/*nav*/
+.navFixed{
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 45px;
+	z-index: 10;
+	border-bottom: 1px solid black;
+}
+.nav {
+	width: 100%;
+	/*position: relative;*/
+}
+.uls {
+	padding: 10px 5%;
+	height: 21px;
+	position: relative;
+}
+.navL_img{
+	position: absolute;
+	right: 40px;
+	top: 5px;
+	display: none;
+}
+.uls .navL {
+	float: left;
+	z-index: 13;
+}
+.uls .navL .navLa{
+	font-size: 14px;
+	color: #000741;
+	font-weight: 900;
+	text-align: center;
+	padding: 12px 35px 12px 40px;
+}
+.uls .navL span {
+	font-size: 14px;
+	color: #000741;
+}
+.uls .navL .navLa:hover {
+	color: #ccc;
+}
+.lis1{
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	z-index: 13;
+	background: white;
+	width: 100%;
+	height: 400px;
+	border-top: 1px solid black;
+	padding: 40px 0;
+	display: none;
+}
+.lis1 dl{
+	height: 440px;
+	overflow: hidden;
+	display: -webkit-flex;
+	/*-webkit-align-items: center;*/
+	-webkit-justify-content: center;
+}
+
+.lis1 dt,.lis1 dd{
+	width: 200px;	
+	/*float:left;*/
+	/*-webkit-flex: 1;*/
+}
+.lis1 dt li{
+	height: 30px;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+}
+.lis1 a{
+	color: #000;
+}
+.lis1 a:hover{
+	color: #ccc;
+}
+
+
+/*footer*/
+.footer{
+	width: 100%;
+}
+.info{
+	border-top: 1px solid black;
+	overflow: hidden;
+	padding: 20px 0;
+}
+.info_left{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.info_left p{
+	font-size: 18px;
+	font-weight: 900;
+}
+.info_left form{
+	margin: 12px 0;
+}
+.info #email{
+	width: 80%;
+	height: 26px;
+	margin: 20px 0;
+	border: none;
+	border-bottom: 1px solid #000;
+	transition: all .5s ease 0;
+	text-align: center;
+}
+.footTagButton{
+	display: block;
+	padding: 8px 20px;
+	margin: 0 auto;
+	border: 2px solid black;
+	font-size: 12px;
+	font-weight: 600;
+	color: black;
+	background: white;
+	transition: all .5s ease 0;
+}
+.footTagButton:hover{
+	background: #000;
+	color: white;
+}
+.infoLTagA{
+	position: relative;
+}
+.wechatPublic{
+	position: absolute;
+	left: -82px;
+	top: 20px;
+	z-index: 1;
+	display: none;
+}
+.infoLTagA:hover .wechatPublic{
+	display: block;
+}
+.info_mid{
+	float: left;
+	width: 33%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	text-align: center;
+}
+.info_right{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.info_right h3{
+	margin: 20px 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+.infoR_div1{
+	margin-top: 20px;
+	font-size: 14px;
+}
+.infoR_div2{
+	margin-top: 40px;
+	font-size: 14px;
+}
+.onlinewaiter{
+	border-top: 1px solid black;
+	height: 70px;
+	font-size: 18px;
+	text-align: center;
+	position: relative;
+}
+.onlinewaiter a{
+	color: #000;
+}
+.onlinewaiter:hover,.onlineserver:hover .warnDiv{
+	display: block;
+}
+.onlineA,.onlineSpan{
+	line-height: 70px;
+}
+.onlineA img{
+	vertical-align: middle;
+}
+.onlineA:hover strong{
+	color: #369;
+}
+.warnDiv{
+	width: 240px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	padding: 5px;
+	text-align: left;
+	background: #f0fcfc;
+	border: 1px solid #7f7573;
+	position: absolute;
+	left: 67%;
+	top: -30px;
+	display: none;
+}
+.reminder1{
+	display: inline-block;
+	background: url(../img/reminderLeft.png)no-repeat;
+	position: absolute;
+	left: -9px;
+	top: 55px;
+	width: 9px;
+	height: 15px;
+}
+.reminder2{
+	color: #A0000A;
+}
+.storeInfo{
+	border-top: 3px solid black;
+	text-align: center;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.stoIn_div{
+	width: 33%;
+	float: left;
+}
+.stoIn_div h3{
+	font-size: 18px;
+	font-weight: 700;
+	margin: 20px 0;	
+}
+.store_uls{
+	overflow: hidden;
+	width: 210px;
+	margin: 0 auto;
+	line-height: 26px;
+}
+.store_uls li{
+	float: left;
+	margin-left: 30px;
+	font-size: 14px;
+}
+.store_uls li a{
+	color: #666;
+}
+.store_uls li a:hover{
+	color: #369;
+}
+.check_store{
+	width: 301px;
+	margin: 0 auto;
+}
+.store_tel{
+	margin: 20px 0;
+	font-size: 14px;
+	color: #666;
+	line-height: 26px;
+}
+.giftButton{
+	width: 56px;
+}
+.copyRight{
+	border-top: 1px solid black;
+	text-align: center;
+	font-size: 12px;
+}
+.copyRight p{
+	margin: 20px 0;
+}
+.copyRight a{
+	padding: 0 5px;
+	color: #000;
+}
+.copyRight p:nth-child(2) a{
+	padding: 0 15px;
+}
+.copyRight a:hover{
+	color: #369;
+}
+.copyRight img{
+	vertical-align: middle;
+}
+
+
+

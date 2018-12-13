@@ -1,0 +1,176 @@
+.content{
+	background: #fff;
+}
+.content_top{
+	width: 1170px;
+	padding: 10px 0;
+	margin: 0 auto;
+	font-size: 13px;
+}
+.content_top a{
+	font-size: 13px;
+	color: #000;
+	font-weight: 700;
+	margin: 0 10px;
+}
+.content_top a:first-child{
+	margin-left: 10px;
+}
+.bg_content{
+	width: 1170px;
+	margin: 0 auto 30px;
+	background: #fff;
+	overflow: hidden;
+}
+.content_left{
+	float: left;
+	width: 10%;
+	padding: 0 15px;
+	margin-top: 30px;
+}
+.navUls a{
+	font-size: 13px;
+	color: #000;
+	line-height: 25px;
+}
+.navLi0{
+	text-indent: -5px;
+}
+
+.content_bottom{
+	float: right;
+	width: 87%;
+}
+.content_List{
+	margin-top: 30px;
+	position: relative;
+}
+.contOneA{
+	padding: 20px 30px;
+	position: absolute;
+	top: 63%;
+}
+.coa1{
+	left: 36%;
+}
+.coa2{
+	left: 42.5%;
+}
+.coa3{
+	left: 48.5%;
+}
+.coa21{
+	top: 57%;
+	left: 53%;
+}
+.coa22{
+	top: 57%;
+	left: 58.5%;
+}
+.coa23{
+	top: 57%;
+	left: 64%;
+}
+.coa24{
+	top: 70%;
+	left: 53%;
+}
+.coa25{
+	top: 70%;
+	left: 58.5%;
+}
+.coa26{
+	top: 70%;
+	left: 64%;
+}
+.bg_priceSort{
+	overflow: hidden;
+	background: #FFFFFF;
+	margin: 10px 0;
+}
+.priceSort{
+	float: right;
+	width: 13%;
+	height: 30px;
+	position: relative;
+}
+.priceSort span{
+	font-size: 14px;
+	padding: 10px;
+	cursor: pointer;
+}
+.psSpan{
+	position: absolute;
+	left: 72px;
+}
+.pss1{
+	top: -16px;
+}
+.pss2{
+	top: 0;
+}
+.psSpan img{
+	width: 12px;
+	height: 12px;
+}
+.clothesList{
+	margin-top: 20px;
+	overflow: hidden;
+	
+}
+.clTop{
+	overflow: hidden;
+}
+.cloth1{
+	float: left;
+	font-size: 14px;
+}
+.cloth2{
+	float: right;
+	font-size: 14px;
+}
+.clList{
+	float: left;
+	width: 210px;
+	padding: 0 20px;
+	margin-top: 20px;
+}
+.clList p{
+	font-size: 13px;
+	line-height: 20px;
+	text-align: left;
+}
+.clList p a{
+	color: #000;
+}
+.specSaleP{
+	color: #a0000a;
+}
+.red_bg_tri{
+	float: left;
+	width: 9px;
+	height: 18px;
+	background: url(../img/red-bg_01.jpg)no-repeat;
+}
+.red_bg_squr{
+	float: left;
+	min-width: 90px;
+	height: 18px;
+	color: #FFFFFF!important;
+	background: red;
+	font-size: 12px;
+	text-align: center;
+	line-height: 18px;
+	padding: 0 2px;
+}
+
+/*返回顶部*/
+#toTop{
+	width: 38px;
+	height: 38px;
+	background: url(../img/toTop.png)no-repeat;
+	position: fixed;
+	right: 15px;
+	bottom: 10px;
+	cursor: pointer;
+}

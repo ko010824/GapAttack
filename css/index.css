@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*adAndNav*/
+.adAndNav {
+	padding: 0 7%;
+	margin: 3% 0;
+	position: relative;
+}
+.navlist {
+	width: 7%;
+	height: 16%;
+	z-index: 1;
+	position: absolute;
+	top: 84%;
+}
+.adAndNav .list1 {
+	left: 20%;
+}
+.adAndNav .list2 {
+	left: 27%;
+}
+.adAndNav .list3 {
+	left: 33.5%;
+}
+.adAndNav .list4 {
+	left: 40.5%;
+}
+.adAndNav .list5 {
+	left: 47%;
+}
+.adAndNav .list6 {
+	left: 54%;
+}
+.adAndNav .list7 {
+	left: 61%;
+}
+.adAndNav .list8 {
+	left: 67.5%;
+}
+.adAndNav .list9{
+	left: 74.5%;
+}
+/*contentOne*/
+.content{
+	width: 6%;
+	height: 8%;
+	z-index: 1;
+	position: absolute;
+	top: 94%;
+}
+.adAndNav .list11 {
+	left: 23.5%;
+}
+.adAndNav .list12 {
+	left: 30.5%;
+}
+.adAndNav .list13 {
+	left: 37%;
+}
+.adAndNav .list14 {
+	left: 44%;
+}
+.adAndNav .list15 {
+	left: 51%;
+}
+.adAndNav .list16 {
+	left: 57.5%;
+}
+.adAndNav .list17 {
+	left: 64.5%;
+}
+.adAndNav .list18 {
+	left: 71.5%;
+}
+
+/*contentTwo*/
+
+/*contentThree*/
+.topSell{
+	width: 18%;
+	height: 88%;
+	position: absolute;
+	top: 5%;
+	left: 10%;
+}
+.adAndNav .girlSell{
+	left: 10%;
+}
+.adAndNav .boysSell{
+	left: 30%;
+}
+.adAndNav .babySell{
+	left: 50%;
+}
+
+/*img1*/
+
+/*img2*/
+
+/*slider*/
+.bgslider{
+	width: 1170px;
+	height: 306px;
+	/*background: black;*/
+	padding: 0 7%;
+	box-sizing: border-box;
+}
+/*contentFour*/
+.winterStuff{
+	width: 34.7%;
+	height: 92%;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+}
+.bundledup{
+	right: 51.3%;
+}
+.softsweaters{
+	right: 13.4%;
+}
+.contentFour{
+	width: 4%;
+	height: 8%;
+	z-index: 1;
+	position: absolute;
+	top: 93%;
+}
+.adAndNav .list41{
+	left: 14%;
+}
+.adAndNav .list42{
+	left: 18%;
+}
+.adAndNav .list43{
+	left: 22.5%;
+}
+.adAndNav .list44{
+	left: 27%;
+}
+.adAndNav .list45{
+	left: 31.5%;
+}
+.adAndNav .list46{
+	left: 36%;
+}
+.adAndNav .list47{
+	left: 40.5%;
+}
+.adAndNav .list48{
+	left: 45%;
+}
+.adAndNav .list49{
+	left: 65.5%;
+}
+.adAndNav .list410{
+	left: 70%;
+}
+
+/*contentFive*/
+.contentFive{
+	z-index: 1;
+	position: absolute;
+}
+.adAndNav .list51{
+	width: 3%;
+	height: 10%;
+	right: 38%;
+	top: 66%;
+}
+.adAndNav .list52{
+	width: 7%;
+	height: 10%;
+	right: 30.5%;
+	top: 66%;
+}
+.adAndNav .list53{
+	width: 3%;
+	height: 10%;
+	right: 38%;
+	top: 76%;
+}
+.adAndNav .list54{
+	width: 7%;
+	height: 10%;
+	right: 30.5%;
+	top: 76%;
+}
+.adAndNav .list55{
+	width: 7%;
+	height: 10%;
+	right: 23.5%;
+	top: 76%;
+}
+
+/*contentSix*/
+.winterClothes{
+	width: 28%;
+	height: 88%;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+}
+.adAndNav .lookbook{
+	left: 7%;
+}
+.adAndNav .spotonsherpa{
+	left: 36.5%;
+}
+.adAndNav .bodysuits{
+	left: 65.5%;
+}
+.contentSix{
+	width: 3%;
+	height: 8%;
+	z-index: 1;
+	position: absolute;
+	top: 91%;
+}
+.adAndNav .list61{
+	left: 17.4%;
+}
+.adAndNav .list62{
+	left: 21.5%;
+}
+.adAndNav .list63{
+	left: 37.5%;
+}
+.adAndNav .list64{
+	left: 42%;
+}
+.adAndNav .list65{
+	left: 46.5%;
+}
+.adAndNav .list66{
+	left: 51%;
+}
+.adAndNav .list67{
+	left: 55.4%;
+}
+.adAndNav .list68{
+	left: 60%;
+}
+.adAndNav .list69{
+	left: 76%;
+}
+.adAndNav .list610{
+	left: 80.5%;
+}
+
+/*contentSeries*/
+.contentSeries{
+	width: 14%;
+	height: 72%;
+	z-index: 1;
+	position: absolute;
+	top: 14%;
+}
+.adAndNav .lists1{
+	left: 7%;
+}
+.adAndNav .lists2{
+	left: 21.5%;
+}
+.adAndNav .lists3{
+	left: 36.5%;
+}
+.adAndNav .lists4{
+	left: 50.8%;
+}
+.adAndNav .lists5{
+	left: 65.2%;
+}
+.adAndNav .lists6{
+	left: 80%;
+}
+/*goodForEarth*/
+.goodForEarth{
+	max-width: 1170px;
+	margin: 0 auto;
+	border-top: 1px solid black;
+}
