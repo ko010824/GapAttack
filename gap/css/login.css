@@ -1,0 +1,99 @@
+
+
+.bglogin{
+	width: 100%;
+	background: #fff;
+	margin: 30px 0;
+}
+.loginDiv{
+	width: 480px;
+	padding: 30px;
+	margin: 0 auto;
+	background: #f0eae9;
+	overflow: hidden;
+}
+.loginA{
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+.loginA a{
+	padding: 0 10px 10px 10px;
+	font-size: 16px;
+	color: #000;
+}
+.loginA .nt_a1{
+	margin-left: 10px;
+}
+.loginA .nt_a2{
+	color: #999;
+	margin-left: 60%;
+}
+.navTab{
+	overflow: hidden;
+}
+.tab_content{
+	font-size: 13px;
+	padding: 0 5%;
+	float: left;
+}
+#login{
+	display: none;
+	padding-top: 20px;
+}
+.first_p{
+	font-size: 13px;
+	color: #999999;
+	text-align: left;
+	line-height: 20px;
+	margin-top: 10px;
+}
+.tc_reg p{
+	margin: 20px auto;
+	color: #000;
+}
+.tc_reg p span{
+	font-size: 12px;
+	visibility: hidden;
+	color: #FF3200;
+}
+
+.tc_reg input{
+	margin: 5px 5px 5px -2px;
+	width: 360px;
+	height: 38px;
+	text-indent: 6px;
+	border: 1px solid #999;
+}
+#submitButt{
+	outline: none;
+	border: none;
+	background: #ff3200;
+	height: 50px;
+	min-width: 100px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#checkedBox{
+	width: 13px;
+	height: 13px;
+	border-radius: 3px;
+	line-height: 20px;
+}
+.tc_log a{
+	margin-left: 30%;
+	color: cornflowerblue;
+}
+.tc_log a:hover{
+	color: #369;
+	text-decoration: underline;
+}
+.tc_log p:nth-child(2){
+	position: relative;
+}
+.tc_log img{
+	position: absolute;
+	right: 4%;
+	top: 35%;
+	cursor: pointer;
+}

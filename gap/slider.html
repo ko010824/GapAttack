@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.sliderContainer{
+				width: 1170px;
+				height: 306px;
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.slider{
+				width: 10000px;
+				height: 306px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.slider ul{
+				float: left;
+				text-align: center;
+			}
+			.slider li{
+				width: 230px;
+				height: auto;
+				margin-right: 5px;
+				float: left;
+			}
+			.slider ul li:last-child{
+				margin-right: 0;
+			}
+			.slider img{
+				width: 230px;
+				height: 306px;
+				display: block;
+			}
+			.slider_button{
+				position: absolute;
+				top: 45%;
+				z-index: 4;
+				width: 27px;
+				height: 44px;
+				cursor: pointer;
+			}
+			.clickLeft{
+				background: url(img/left.svg)no-repeat;
+				left: 10px;
+			}
+			.clickRight{
+				background: url(img/right.svg)no-repeat;
+				right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sliderContainer">
+			<div class="slider">
+				<ul>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/1.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/2.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/3.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/4.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/5.jpg"/></a></li>
+				</ul>
+				<ul>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/6.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/7.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/8.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/9.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/10.jpg"/></a></li>
+				</ul>
+				<ul>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/11.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/12.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/13.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/14.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/15.jpg"/></a></li>
+				</ul>
+				<ul>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/16.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/17.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/18.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/19.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/20.jpg"/></a></li>
+				</ul>
+				<ul>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/1.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/2.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/3.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/4.jpg"/></a></li>
+					<li><a href="javascript:;" title="这是我的轮播图"><img src="img/5.jpg"/></a></li>
+				</ul>
+			</div>
+			<div class="slider_button clickLeft"></div>
+			<div class="slider_button clickRight"></div>
+		</div>
+	</body>
+</html>
+<!--<script src="js/jquery-1.11.0.min.js"></script>-->
+<script type="text/javascript">
+	//slider
+	$(document).ready(function(){
+		var sliderIndex = 0;
+		var myTimer = null;
+		if(myTimer!= null){
+			return;
+		}
+		function autoPlay(){
+			myTimer = setInterval(function(){
+	//			let outIndex = sliderIndex;
+				sliderIndex++;
+				if(sliderIndex>3 || sliderIndex<0){
+					sliderIndex=0;
+				}
+				let sliderLeft1 = -1*sliderIndex*$(".sliderContainer").width();
+				$(".slider").animate({"left":sliderLeft1},500,function(){
+	//				$(".slider").css("left","0");
+	//				sliderIndex = 0;
+				});
+			},2500);
+		}
+		
+		$(".slider").hover(function(){
+			clearInterval(myTimer);
+			myTimer = null;
+		},autoPlay);
+		
+		 
+		$(".clickLeft").on("click",function(){
+		        sliderIndex--;
+		    // animateLength表示想要让slideImageLists移动到什么位置，slideImageLists 的位置由 left属性来控制
+		　　 var animateLength = sliderIndex * (-1170) + "px";
+		    $(".slider").animate({"left":animateLength},500,function(){
+		        if(sliderIndex<=0){
+		            $(".slider").css("left",3*(-1170)+"px");
+		            sliderIndex = 3;
+		        }
+		    });
+		});
+		
+		$(".clickRight").on("click",function(){
+		        sliderIndex++;
+		　　 var animateLength = sliderIndex * (-1170) + "px";
+		    $(".slider").animate({"left":animateLength},500,function(){
+		        if(sliderIndex>3){
+		            $(".slider").css("left",0);
+		            sliderIndex = 0;
+		        }
+		    });
+		});
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		let currLeft = 0;
+//		let myTimer = null;//赋初值为null
+//		let directionLeft = -1;
+//		//自动滚动
+//		function playImg(){
+//			myTimer = setInterval(function(){
+//				//改变left
+//				currLeft = currLeft+directionLeft*1200;
+//				//判断边界
+//				if(currLeft <=-2400){
+//					directionLeft=1;
+//				}else if(currLeft>=0){
+//					directionLeft=-1;
+//				}
+//				//改变外观
+//				$(".slider")[0].style.left = currLeft+"px";
+//				
+//			},4000);
+//		}
+//		//停止播放
+//		function stopImg(){
+//			console.log("停止播放");
+//			window.clearInterval(myTimer);
+//		//	myTimer = null;
+//		}
+	});
+	
+</script>
